@@ -1,0 +1,92 @@
+.circle-icon {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: #007bff; /* Puedes ajustar el color de fondo según tu preferencia */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.circle-icon:hover {
+	background-color: #0056b3; /* Puedes ajustar el color de fondo al pasar el mouse */
+}
+
+.like-buttons {
+	padding: 7px;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 1rem;
+}
+body {
+	background-image: url("/tf2-background.png");
+	background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+	background-position: center; /* Centra la imagen */
+	background-repeat: no-repeat; /* Evita que la imagen se repita */
+	background-attachment: fixed; /* Fija la imagen en su posición */
+}
+
+/* styles.css */
+.flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: -20px; /* Ajusta el valor para controlar la superposición */
+  }
+  
+  .image-container {
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	
+	height: 300px; /* Tamaño pequeño por defecto */
+	transition: height 0.3s ease;
+  }
+  
+  .grid-image {
+	margin-top: 100px;
+
+	width: auto;
+	height: 100px;
+	object-fit: cover;
+	filter: grayscale(100%);
+	transition: filter 0.3s ease,  0.2s ease;
+  }
+  
+  .image-container.hover .grid-image,  
+  .image-container.clicked .grid-image {
+	margin-top: 0;
+
+	filter: grayscale(0%);
+	height: 250px;
+	
+  }
+  .blu{
+	color: #000000;
+  }
+  
+  .centered-image {
+	display: flex;
+	justify-content: center;
+  }
+  .map-type-heading {
+	color: white;
+	text-shadow: -1px -1px 0 #FFA500, 1px -1px 0 #FFA500, -1px 1px 0 #FFA500, 1px 1px 0 #FFA500;
+  }
+
+  .block-style {
+	background: #776a5d;
+  }
+  .block-style * {
+	color: #eae4ca;
+  
+}
+
+.comment-block-style{
+	background: #2e2a24;
+  }
+  .comment-block-style * {
+	color: #eae4ca;
+  
+}
