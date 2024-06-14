@@ -21,7 +21,7 @@ function Likes({ post_id, setIsError }) {
             if (Like === value) {
                 solicitud = "DELETE";
                 response = await fetch(
-                    `http://localhost:3000/api/likes/${usergmail}&${post_id}`,
+                    `http://3.209.155.46:3000/api/likes/${usergmail}&${post_id}`,
                     {
                         method: "DELETE",
                     }
@@ -29,7 +29,7 @@ function Likes({ post_id, setIsError }) {
                 setLike(0);
             } else if (Like === 0) {
                 solicitud = "POST";
-                response = await fetch("http://localhost:3000/api/likes", {
+                response = await fetch("http://3.209.155.46:3000/api/likes", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -40,7 +40,7 @@ function Likes({ post_id, setIsError }) {
             } else {
                 solicitud = "PUT";
                 response = await fetch(
-                    `http://localhost:3000/api/likes/${usergmail}&${post_id}`,
+                    `http://3.209.155.46:3000/api/likes/${usergmail}&${post_id}`,
                     {
                         method: "PUT",
                         headers: { "Content-Type": "application/json" },
@@ -89,7 +89,7 @@ function Likes({ post_id, setIsError }) {
     useEffect(() => {
         const fetchLikes = async () => {
             const response = await fetch(
-                "http://localhost:3000/api/likes/" + usergmail + "&" + post_id
+                "http://3.209.155.46:3000/api/likes/" + usergmail + "&" + post_id
             );
             if (!response.ok) {
                 setIsError("Error al obtener los likes");

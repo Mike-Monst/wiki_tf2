@@ -42,7 +42,7 @@ function Posts() {
 
 			try {
 				const responsePost = await fetch(
-					`http://localhost:3000/api/posts${
+					`http://3.209.155.46:3000/api/posts${
 						category ? `?category=${category}` : ""
 					}`
 				);

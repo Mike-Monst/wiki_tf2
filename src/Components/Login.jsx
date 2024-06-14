@@ -19,7 +19,7 @@ function Login({ setIsLoggedIn, handleForm }) {
 		e.preventDefault();
 		try {
 			const gmail = formData.gmail;
-			const response = await fetch(`http://localhost:3000/api/users/${gmail}`);
+			const response = await fetch(`http://3.209.155.46:3000/api/users/${gmail}`);
 			if (!response.ok) {
 				setError("Usuario no encontrado.", response.mensaje);
 			}

@@ -27,10 +27,10 @@ function PostComment() {
 		const fetchPostAndComments = async () => {
 			try {
 				const postResponse = await fetch(
-					`http://localhost:3000/api/posts/${postId}`
+					`http://3.209.155.46:3000/api/posts/${postId}`
 				);
 				const commentsResponse = await fetch(
-					`http://localhost:3000/api/comments?postId=${postId}`
+					`http://3.209.155.46:3000/api/comments?postId=${postId}`
 				);
 
 				if (postResponse.ok && commentsResponse.ok) {
@@ -68,7 +68,7 @@ function PostComment() {
 			};
 
 			try {
-				const response = await fetch("http://localhost:3000/api/comments", {
+				const response = await fetch("http://3.209.155.46:3000/api/comments", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",

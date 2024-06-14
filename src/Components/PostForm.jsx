@@ -15,7 +15,7 @@ function PostForm() {
 	useEffect(() => {
 		async function fetchData() {
 			try {
-				const response = await fetch(`http://localhost:3000/api/categories`);
+				const response = await fetch(`http://3.209.155.46:3000/api/categories`);
 
 				if (response.ok) {
 					const datos = await response.json();
@@ -41,7 +41,7 @@ function PostForm() {
 		formData.post_id = formData.post_id.toString().padStart(6, "0");
 		
 		try {
-			const response = await fetch("http://localhost:3000/api/posts", {
+			const response = await fetch("http://3.209.155.46:3000/api/posts", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

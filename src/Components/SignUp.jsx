@@ -36,7 +36,7 @@ function SignUp({ setIsLoggedIn, handleForm }) {
 				nickname: formData.nickname,
 			};
 			try {
-				const response = await fetch("http://localhost:3000/api/users", {
+				const response = await fetch("http://3.209.155.46:3000/api/users", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",

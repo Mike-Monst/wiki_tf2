@@ -10,7 +10,7 @@ function DeleteButton({ post_id, onDelete }) {
 	const handleDelete = async () => {
 		console.log('Borrando el dato con id:', post_id);
 		try {
-			const response = await fetch(`http://localhost:3000/api/posts/${post_id}`,
+			const response = await fetch(`http://3.209.155.46:3000/api/posts/${post_id}`,
 			{
 				method: "DELETE",
 			}
