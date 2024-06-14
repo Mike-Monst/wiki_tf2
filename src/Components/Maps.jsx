@@ -6,13 +6,13 @@ import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage } from 'm
 import '../index.css';
 
 const maps = [
-    { name: 'Dustbowl',			type: 'Control Points', 	image: '/images/dustbowl.jpg' },
+    { name: 'Dustbowl',			type: 'Control Points', 	image: '/maps/Dustbowl_Map.jpg' },
     { name: '2Fort',			type: 'Capture the Flag', 	image: '/maps/2Fort.webp' },
-    { name: 'Badwater Basin',	type: 'Payload', 			image: '/images/badwater_basin.jpg' },
-    { name: 'Granary',			type: 'Control Points', 	image: '/images/granary.jpg' },
-    { name: 'Gold Rush',	 	type: 'Payload', 			image: '/images/gold_rush.jpg' },
-    { name: 'Hightower',	 	type: 'Payload Race', 		image: '/images/hightower.jpg' },
-    { name: 'Nucleus',		 	type: 'King of the Hill', 	image: '/images/nucleus.jpg' },
+    { name: 'Badwater Basin',	type: 'Payload', 			image: '/maps/Plbadwater.png' },
+    { name: 'Granary',			type: 'Control Points', 	image: '/maps/Granary_Map.jpg' },
+    { name: 'Gold Rush',	 	type: 'Payload', 			image: '/maps/Goldrush.png' },
+    { name: 'Hightower',	 	type: 'Payload Race', 		image: '/maps/Hightower.png' },
+    { name: 'Nucleus',		 	type: 'King of the Hill', 	image: '/maps/Arenanucleus.png' },
 ];
 
 // Función para agrupar los mapas por tipo
